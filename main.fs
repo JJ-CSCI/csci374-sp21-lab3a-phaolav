@@ -4,16 +4,16 @@ module Assignment
 
 // Define following distance unit transformations
 let inchToMillimeter v =
-    0.0 // write your code here
+   (v : float) * 25.4 // write your code here
 
 let footToInch x =
-    0.0 // write your code here
+    (x : float) * float 12 // write your code here
 
 let yardToFoot v =
-    0.0 // write your code here
+    (v : float) * float 3  // write your code here
 
 let mileToYard mile =
-    0.0 // write your code here
+    (mile : float) * float 1760 // write your code here
 
 (*
 Use ONLY above functions and the forward pipe operator, `|>`,  to define the following unit transformation
@@ -21,11 +21,11 @@ Use ONLY above functions and the forward pipe operator, `|>`,  to define the fol
 Forward pipe operator passes the result of the left side to the function on the right side.
 *)
 let yardToMillimeter y =
-    0.0 // write your code here
+    // write your code here
 
 // Define the curried function `divBy1000` that has the signature `float -> float -> float`
 let divBy1000 =
-    fun x->x // write your code here
+    fun x->x/1000 // write your code here
 
 (*
 Use ONLY above functions to define the following two functions. DO NOT CHANGE SIGNATURES!
